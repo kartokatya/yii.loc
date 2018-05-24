@@ -1,31 +1,19 @@
-<?php
-
-/* @var $this \yii\web\View */
-/* @var $content string */
-
-use app\widgets\Alert;
-use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
-use app\assets\AppAsset;
-
-AppAsset::register($this);
-?>
-<?php $this->beginPage() ?>
+<!--A Design by W3layouts 
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
-
+<html>
 <head>
- <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
-    <?php $this->head() ?>
-<link href="" rel="stylesheet" type="text/css" media="all" />
+<title>Fashion Mania A Ecommerce Category Flat Bootstarp Resposive Website Template | Contact :: w3layouts</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src=""></script>
+<script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
-<link href="" rel="stylesheet" type="text/css" media="all" />	
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -33,30 +21,18 @@ AppAsset::register($this);
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- start menu -->
-<link href="" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src=""></script>
+<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/memenu.js"></script>
 <script>$(document).ready(function(){$(".memenu").memenu();});</script>
-<script src=""> </script>
+<script src="js/simpleCart.min.js"> </script>
 <!-- slide -->
-<script src=""></script>
-   <script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
-  </script>
 </head>
 <body>
-<?php $this->beginBody() ?>
 <!--header-->
 <div class="header">
 	<div class="header-top">
 		<div class="container">
-		<div class="col-sm-4 world">
+		<div class="col-md-4 world">
 					<ul >
 						<li>
 						<select class="in-drop">
@@ -72,11 +48,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</li>
 					</ul>
 				</div>
-				<div class="col-sm-4 logo">
+				<div class="col-md-4 logo">
 					<a href="index.html"><img src="images/logo.png" alt=""></a>	
 				</div>
 		
-			<div class="col-sm-4 header-left">		
+			<div class="col-md-4 header-left">		
 					<p class="log"><a href="account.html"  >Login</a>
 						<span>or</span><a  href="account.html"  >Signup</a></p>
 					<div class="cart box_1">
@@ -95,10 +71,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="container">
 			<div class="head-top">
-				<div class="col-sm-2 number">
+				<div class="col-md-2 number">
 					<span><i class="glyphicon glyphicon-phone"></i>085 596 234</span>
 				</div>
-		 <div class="col-sm-8 h_menu4">
+	<div class="col-md-8 h_menu4">
 				<ul class="memenu skyblue">
 					  <li class=" grid"><a  href="index.html">Home</a></li>	
 				      <li><a  href="#">Men</a>
@@ -221,7 +197,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<li><a class="color6" href="contact.html">Conact</a></li>
 			  </ul> 
 			</div>
-				<div class="col-sm-2 search">		
+				<div class="col-md-2 search">		
 			<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a>
 		</div>
 		<div class="clearfix"> </div>
@@ -259,15 +235,69 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 </div>
-
- <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
-        <?= $content ?>
-
-
-
+<!--//header-->
+<div class="contact">
+			<div class="container">
+				<h1>Contact</h1>
+				
+				<div class="contact-grids">
+					<div class="contact-form">
+							<form>
+								<div class="contact-bottom">
+									<div class="col-md-4 in-contact">
+										<span>Name</span>
+										<input type="text" >
+									</div>
+									<div class="col-md-4 in-contact">
+										<span>Email</span>
+										<input type="text" >
+									</div>
+									<div class="col-md-4 in-contact">
+										<span>Phonenumber</span>
+										<input type="text">
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							
+								<div class="contact-bottom-top">
+									<span>Message</span>
+									<textarea > </textarea>								
+									</div>
+								<input type="submit" value="Send">
+							</form>
+						</div>
+				<div class="address">
+					<div class=" address-more">
+						<h2>Address</h2>
+						<div class="col-md-4 address-grid">
+							<i class="glyphicon glyphicon-map-marker"></i>
+							<div class="address1">
+								<p>Lorem ipsum dolor</p>
+								<p>TL 19034-88974</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 address-grid ">
+							<i class="glyphicon glyphicon-phone"></i>
+							<div class="address1">
+								<p>+885699655</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 address-grid ">
+							<i class="glyphicon glyphicon-envelope"></i>
+							<div class="address1">
+								<p><a href="mailto:@example.com"> @example.com</a></p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--//content-->
 
 <!--footer-->
 <div class="footer">
@@ -288,7 +318,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<div class="footer-bottom">
 		<div class="container">
-				<div class="col-sm-3 footer-bottom-cate">
+				<div class="col-md-3 footer-bottom-cate">
 					<h6>Categories</h6>
 					<ul>
 						<li><a href="#">Curabitur sapien</a></li>
@@ -299,7 +329,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 					</ul>
 				</div>
-				<div class="col-sm-3 footer-bottom-cate">
+				<div class="col-md-3 footer-bottom-cate">
 					<h6>Feature Projects</h6>
 					<ul>
 						<li><a href="#">Curabitur sapien</a></li>
@@ -310,7 +340,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 					</ul>
 				</div>
-				<div class="col-sm-3 footer-bottom-cate">
+				<div class="col-md-3 footer-bottom-cate">
 					<h6>Top Brands</h6>
 					<ul>
 						<li><a href="#">Curabitur sapien</a></li>
@@ -323,7 +353,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 					</ul>
 				</div>
-				<div class="col-sm-3 footer-bottom-cate cate-bottom">
+				<div class="col-md-3 footer-bottom-cate cate-bottom">
 					<h6>Our Address</h6>
 					<ul>
 						<li>Aliquam metus  dui. </li>
@@ -341,9 +371,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 
 <!--//footer-->
-
-
-<?php $this->endBody() ?>
 </body>
 </html>
-<?php $this->endPage() ?>
